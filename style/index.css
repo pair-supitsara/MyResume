@@ -1,0 +1,80 @@
+/* .first {
+    display: flex;
+    flex-direction: column;
+}
+.first > .name {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.first > .intro {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+} */
+
+/* About me */
+img {
+    width: 80px;
+}
+
+.card {
+    display: flex;
+    width: 40%;
+    margin: 4rem;
+    background-color: var(--secondary-color);
+    border-radius: .5rem;
+    box-shadow: var(--card-shadow)
+}
+.card-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem .5rem;
+    width: 100%;
+}
+.card-left > img { border-radius: 50%;}
+.card-right {
+    padding: 2rem .5rem;
+}
+
+.text-name {
+    font-size: 2.0rem;
+    letter-spacing: 0.175rem;
+}
+.text-title {
+    font-size: 1.25rem;
+    letter-spacing: 0.15rem;
+}
+/* Experience */
+.box-of-education {
+    display: block;
+    width: 60%;
+    height: 20rem;
+    background-color: var(--secondary-color);
+    margin-top: 1.75rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+/* Skill */
+.box-of-skill {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin-top: 1.75rem;
+}
+.skill-logo {
+    --cubic-size: 3.5rem;
+
+    display: block;
+    height: var(--cubic-size);
+    width: var(--cubic-size);
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow)
+}
+
+/* Projects & Interests */
+
+/* Get In Touch */
