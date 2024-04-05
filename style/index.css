@@ -91,7 +91,8 @@ img {
   .carousel-item {
     flex: 0 0 30%;
     background-color: var(--secondary-color);
-    margin: 0 1.125rem;
+    border-radius: 1rem;
+    margin: 0 0 0 2rem;
   }
   .carousel-item img {
     display: block;
@@ -101,14 +102,14 @@ img {
   .carousel-btn {
     cursor: pointer;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--secondary-color);
     color: #fff;
-    text-align: center;
-    line-height: 30px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30px;
   }
   .carousel-prev {
     left: 0;
@@ -117,3 +118,28 @@ img {
     right: 0;
   }
 /* Get In Touch */
+form {
+    display: block;
+    width: 30%;
+}
+.row {
+    margin: .7rem 0;
+}
+input {
+    width: 100%;
+    letter-spacing: 0.05rem;
+    font-size: .7rem;
+}
+textarea {
+    width: 100%;
+    resize: none;
+    font-size: .7rem;
+}
+input[type="submit"] {
+    background-color: var(--secondary-color);
+    border: 0 solid black;
+    border-radius: 0.1rem;
+    padding: .4rem .4rem;
+    color: white;
+    box-shadow: var(--card-shadow);
+}

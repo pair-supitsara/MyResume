@@ -12,11 +12,22 @@
         <div class="slide">
             <div class="navigation">
                 <ul>
-                    <li>Introduction</li>
-                    <li>Education & Experience</li>
-                    <li>Skill</li>
-                    <li>Projects & Interests</li>
-                    <li>Get in touch</li>
+                    <a href="#introPage">
+                        <li>Introduction</li>
+                    </a>
+                    <a href="#expPage">
+                        <li>Education & Experience</li>    
+                    </a>
+                    <a href="#skillPage">
+                        <li>Skill</li>
+                    </a>
+                    <a href="#projectPage">
+                        <li>Projects & Interests</li>
+                    </a>
+                    <a href="#sendPage">
+                        <li>Send to E-mail</li>    
+                    </a>
+                    
                 </ul>    
             </div>
             
@@ -25,7 +36,7 @@
                 <h2 class="text-title">I am a full stack developer.</h2>
             </div>
 
-            <div class="card">
+            <div id="introPage" class="card">
                 <div class="card-left">
                     <img src="./style/profile.jpg" />
                 </div>
@@ -40,9 +51,9 @@
             </div>
 
         </div>
-        <div class="slide second">
+        <div id="expPage" class="slide second">
             <div>
-                <h1>Education & Experience</h1>
+                <h2>Education & Experience</h2>
             </div>
             <div class="box-of-education">
                 <h3>education</h3>
@@ -64,9 +75,9 @@
                 <h3>education</h3>
             </div>
         </div>
-        <div class="slide third">
+        <div id="skillPage" class="slide third">
             <div>
-                <h1>Skill</h1>  
+                <h2>Skill</h2>  
             </div>
             <div class="box-of-skill">
                 <div class="skill-logo"></div>
@@ -81,9 +92,9 @@
             </div>
 
         </div>
-        <div class="slide fourth">
+        <div id="projectPage" class="slide fourth">
             <div>
-                <h1>Projects & Interests</h1>  
+                <h2>Projects & Interests</h2>  
             </div>
             <div class="carousel">
                 <div class="carousel-inner">
@@ -129,26 +140,25 @@
                 });
               </script>
         </div>
-        <div class="slide fourth">
+        <div id="sendPage" class="slide fourth">
             <div>
-                <h1>Get In Touch</h1>
+                <h2>Send to E-mail</h2>
             </div>
-            <div class="card">
+            <form>
+                <div class="row">
+                    <input type="text" placeholder="reciepient...">    
+                </div>
+                
+                <div class="row">
+                    <input type="text" placeholder="subject...">
+                </div>
 
-                <label for="">
-                    Topic : 
-                    <input type="text">
-                </label>
-                <label for="">
-                    Email : 
-                    <input type="text">
-                </label>
-                <br>
-                <label for="">
-                    Description : 
-                    <input type="text">
-                </label>
-            </div>
+                <div class="row">
+                    <textarea placeholder="typing..."></textarea>
+                </div>
+                
+                <input type="submit" value="send">
+            </form>
         </div>
 
     </div>
