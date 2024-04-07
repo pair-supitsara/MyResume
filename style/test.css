@@ -1,0 +1,35 @@
+.hover-card {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .hover-card h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .hover-card p {
+    margin: 10px 0 0;
+    color: #666;
+  }
+  
+  .hover-card h2::after,
+  .hover-card p::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+  }
+  
+  .hover-card h2:hover::after,
+  .hover-card p:hover::after {
+    width: 100%;
+  }

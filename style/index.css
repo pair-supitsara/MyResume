@@ -23,9 +23,10 @@ img {
     display: flex;
     width: 40%;
     margin: 4rem;
-    background-color: var(--secondary-color);
-    border-radius: .5rem;
-    box-shadow: var(--card-shadow)
+    background-color: var(--card-color);
+    backdrop-filter:  var(--card-blur);
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-shadow);
 }
 .card-left {
     display: flex;
@@ -46,16 +47,29 @@ img {
 .text-title {
     font-size: 1.25rem;
     letter-spacing: 0.15rem;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: reveal 4s steps(28) forwards;
 }
+@keyframes reveal {
+    0%   {width: 0%;}
+    25%  {width: 100%;}
+    100% {width: 100%;}
+  }
 /* Experience */
 .box-of-education {
     display: block;
     width: 60%;
     height: 20rem;
-    background-color: var(--secondary-color);
+    background-color: var(--card-color);
+    backdrop-filter:  var(--card-blur);
     margin-top: 1.75rem;
+}
+.scroll-style {
     overflow-y: auto;
     overflow-x: hidden;
+    scrollbar-color: white transparent;
+    scrollbar-width: thin;
 }
 /* Skill */
 .box-of-skill {
@@ -70,8 +84,9 @@ img {
     display: block;
     height: var(--cubic-size);
     width: var(--cubic-size);
-    background-color: var(--secondary-color);
-    border-radius: 1rem;
+    background-color: var(--card-color);
+    backdrop-filter:  var(--card-blur);
+    border-radius: var(--card-radius);
     box-shadow: var(--card-shadow)
 }
 
@@ -90,8 +105,9 @@ img {
   }
   .carousel-item {
     flex: 0 0 30%;
-    background-color: var(--secondary-color);
-    border-radius: 1rem;
+    background-color: var(--card-color);
+    backdrop-filter:  var(--card-blur);
+    border-radius: var(--card-radius);
     margin: 0 0 0 2rem;
   }
   .carousel-item img {
@@ -128,18 +144,33 @@ form {
 input {
     width: 100%;
     letter-spacing: 0.05rem;
+}
+.input-box {
     font-size: .7rem;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: var(--card-radius);
+    color: white;
+    padding: .3rem;
 }
 textarea {
     width: 100%;
     resize: none;
-    font-size: .7rem;
 }
 input[type="submit"] {
-    background-color: var(--secondary-color);
-    border: 0 solid black;
-    border-radius: 0.1rem;
-    padding: .4rem .4rem;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: var(--card-radius);
+    padding: .3rem .3rem;
     color: white;
     box-shadow: var(--card-shadow);
+    transition: .5s;
 }
+input[type="submit"]:hover {
+    cursor: pointer;
+
+    background-color: white;
+    color: black;
+    box-shadow: var(--card-shadow);
+}
+
