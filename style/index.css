@@ -71,12 +71,38 @@ img {
     scrollbar-color: white transparent;
     scrollbar-width: thin;
 }
+.edu-item {
+    display: block;
+    background-color: var(--card-color);
+    margin: .3rem;
+    padding: .5rem 1rem;
+    position: relative;
+    box-shadow: var(--card-shadow);
+    transition: .3s;
+}
+.edu-item:hover {
+    margin: 0;
+}
+.date-range {
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    font-size: .7rem;
+    color: black;
+}
 /* Skill */
 .box-of-skill {
     display: flex;
     justify-content: space-evenly;
-    width: 40%;
-    margin-top: 1.75rem;
+    width: auto;
+    margin-top: 1.2rem;
+}
+.box-of-skill > img {
+    width: 20rem;
+}
+.last-row > img {
+    width: 7rem;
+    filter: grayscale(100%);
 }
 .skill-logo {
     --cubic-size: 3.5rem;
@@ -89,7 +115,11 @@ img {
     border-radius: var(--card-radius);
     box-shadow: var(--card-shadow)
 }
-
+.credit {
+    position: absolute;
+    bottom: 4rem;
+    font-size: .7rem;
+}
 /* Projects & Interests */
 .carousel {
     display: flex;
