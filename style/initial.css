@@ -20,7 +20,9 @@
     padding: 0;
     margin: 0;
 }
-
+body {
+    position: relative;
+}
 .slider {
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
@@ -28,6 +30,7 @@
     height: calc(100vh);
     width: 100%;
     background: var(--background-color);
+    position: relative;
 }
 
 .slider > .slide {
@@ -45,7 +48,8 @@
     position: relative;
 }
 .navigation {
-    position: absolute;
+    position: sticky;
+    z-index: 1;
     top: 0;
     display: block;
     width: 100%;
